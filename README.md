@@ -1,16 +1,39 @@
-# Quote Recommendation Chatbot using NLP
+# Quotes Recommendation Chatbot using NLP
 
-A chatbot that recommends quotes based on user's mood using NLP and Sentence Transformers.
+This project is a simple chatbot that recommends inspirational or motivational quotes based on user-selected categories.  
+The chatbot reads a dataset of quotes and returns a random quote from the chosen category.
 
 ## Features
-- Understands user emotions
-- Recommends relevant quotes
-- Beautiful Streamlit UI
-- Fast similarity search with FAISS
+- Recommends quotes based on category
+- Uses a CSV dataset of quotes
+- Simple command-line chatbot interaction
 
-## Installation
-```bash
+## Technologies Used
+- Python
+- Pandas
+- NLP concepts
+- CSV dataset
+
+## Dataset
+The dataset contains two columns:
+- Category
+- Quote
+
+Categories include:
+- motivation
+- inspiration
+- love
+- success
+
+## How to Run
+Install requirements:
 pip install -r requirements.txt
-python src/data/collector.py
-python src/features/embeddings.py
-streamlit run frontend/streamlit_app.py
+
+Run the chatbot:
+python app.py
+
+## Project Structure
+app.py  
+requirements.txt  
+project_report.pdf  
+data/quotes_dataset.csv  
