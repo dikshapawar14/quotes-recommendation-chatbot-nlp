@@ -1,0 +1,21 @@
+stories:
+- story: test motivational quote
+  steps:
+  - user: |
+      give me a motivational quote
+    intent: ask_motivation
+  - action: utter_motivation_quote
+
+- story: test greeting
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+
+- story: test goodbye
+  steps:
+  - user: |
+      bye
+    intent: goodbye
+  - action: utter_goodbye
